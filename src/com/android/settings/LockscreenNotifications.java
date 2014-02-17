@@ -88,7 +88,7 @@ public class LockscreenNotifications extends SettingsPreferenceFragment implemen
                 ActionBar.LayoutParams.WRAP_CONTENT,
                 Gravity.CENTER_VERTICAL | Gravity.END));
         mEnabledSwitch.setChecked(Settings.System.getInt(mContext.getContentResolver(),
-                Settings.System.LOCKSCREEN_NOTIFICATIONS, 0) == 1);
+                Settings.System.LOCKSCREEN_NOTIFICATIONS, 1) == 1);
     }
 
     @Override
